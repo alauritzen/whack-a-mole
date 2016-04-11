@@ -1,0 +1,7 @@
+.mole_hill {
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: grey solid 1px; /*visible while testing*/
+}
+
