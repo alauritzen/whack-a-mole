@@ -2,6 +2,7 @@ body {
     background-image: url(/img/cave.jpg);
     background-repeat: no-repeat;
     /*background-size: contain;*/
+    font-family: "Marcellus SC", Palatino, serif;
 }
 
 .scoreboard {
@@ -12,7 +13,7 @@ body {
     height: 100px;
     width: 100px;
     float: left;
-    border: grey solid 1px; /*visible while testing*/
+    /*border: grey solid 1px; visible while testing*/
     background-image: url(/img/ring90.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -45,4 +46,5 @@ body {
     position: fixed;
     bottom: -350px;
     left: -250px;
+    pointer-events: none;
 }
