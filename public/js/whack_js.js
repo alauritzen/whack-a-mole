@@ -21,7 +21,8 @@ function chooseMoleHill (min, max) {
 // include timer function
 function moleAttack() {
     // begin timer function
-    var timer = 10;
+    var timer = 3;
+    $("#seconds").text(timer);
     var intervalId = setInterval(function () {
         if (timer > 0) {
             timer--;
@@ -29,6 +30,7 @@ function moleAttack() {
         } else {
             clearInterval(moleInterval);
             animation();
+            clearInterval(intervalId);
         }
     }, 1000);
     // function whack is what happens when you whack a mole
@@ -44,7 +46,6 @@ function moleAttack() {
     };
 
     var noWhack = function(square) {
-        console.log("noWhack ran");
         $(square).animate({
             opacity: "0.0"
         },1);
@@ -67,36 +68,34 @@ function moleAttack() {
         }, moleSpeed);
     }, interval);
 
-
-
-/*
-        square.animate({
-            opacity: "0.0"
-        }, interval);
-        square.off("mouseover", whack);
-        */
-        
-        
 };
 
 
 function animation() {
-    $("#gollum").animate({
-        left: "-100",
-        bottom: "-220"
-    }, 200);
-}
+    setTimeout(function() {
+        $("#gollum").animate({
+            left: "-100",
+            bottom: "-220"
+        }, 200);
+    }, 2000);
+
+    
+    
+    var sound = document.getElementById("precious");
+    sound.play();
+};
+
+
 
 
 moleAttack();
 
 
 
-
-
-
-
-
-
-
 })();
+
+
+
+
+
+
