@@ -1,7 +1,6 @@
 body {
     background-image: url(/img/cave.jpg);
     background-repeat: no-repeat;
-    /*background-size: contain;*/
     font-family: "Marcellus SC", Palatino, serif;
 }
 
@@ -21,26 +20,13 @@ body {
 }
 
 .pitch {
-    /*background-color: #5c3a39;*/
-    /*background-image: url(/img/gollums-lair300.jpg);*/
-    /*background-repeat: no-repeat;*/
     padding-left: 0px;
     padding-right: 0px;
     display: inline-block;
     overflow: hidden;
     width: auto;
     margin-bottom: 0px;
-
-    /*float:left;*/
 }
-
-/*
-#gollum
-    {
-        position: absolute;
-        left: -300px;
-    }
-    */
 
 #gollum {
     position: fixed;

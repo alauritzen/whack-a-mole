@@ -4,7 +4,7 @@ var moleHill = $(".mole_hill");
 var score = 0;
 var count = 0;
 var high = 0;
-var start_time = 30;
+var start_time = 8;
 
 $("#seconds").text(start_time);
 
